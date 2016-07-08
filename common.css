@@ -1,0 +1,58 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.drone {
+    width: 26px;
+    height: 26px;
+    background: orange;
+    position: absolute;
+    border-radius: 4px;
+    margin: -13px;
+}
+
+.drone:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 6px;
+    background: red;
+    top: -4px;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.drone div {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    border: 1px solid #ae9f30;
+    margin: -10px;
+}
+
+.drone div:before {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    top: 8px;
+}
+
+.drone div:nth-child(1) { top: 0; left: 0; }
+.drone div:nth-child(2) { top: 0; left: 100%; }
+.drone div:nth-child(3) { top: 100%; left: 0; }
+.drone div:nth-child(4) { top: 100%; left: 100%; }
+
+.bullet {
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background: red;
+    position: absolute;
+    margin: -2px;
+}
